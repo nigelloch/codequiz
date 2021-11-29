@@ -1,6 +1,6 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
-    
+
 }
 
 
@@ -13,9 +13,17 @@ body {
     justify-content: center;
     align-items: center;
 }
-.sticky {
+.header {
     position: fixed;
     top: 0;
     width: 100%;
     justify-content: space-between;
+    height: 10%;
+}
+.question-container {
+    margin: 0;
+    padding: 15px;
+    font-size: 25px;
+    width: 75%;
+    height: 50%;
 }
