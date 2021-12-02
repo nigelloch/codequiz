@@ -1,4 +1,5 @@
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 
 }
@@ -7,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
     width: 100vw;
     height: 100vh;
     justify-content: center;
@@ -26,4 +27,50 @@ body {
     font-size: 25px;
     width: 75%;
     height: 50%;
+}
+
+.container {
+    background-color: aqua;
+    border-radius: 15px;
+    border: navy solid;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 0 10px 1px;
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.startbtn {
+    
+    justify-content: center;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.highscore-timer {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
 }

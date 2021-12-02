@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./assets/js/script.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Code Quiz</title>
+    <title>Riddle Me This!</title>
 
 </head>
 <body>
     <header>
-        <h2 class="header">High Score
-            Timer
+        <h2 class="header">
         </h2>
     </header>
     <div class="container">
         <div class="question-container">
             Question
         </div>
-        <div id="answer-container" class="hide"></div>
+        <div id="answer-container" class="btn-grid">
             <button class="btn">Answer 1</button>
             <button class="btn">Answer 2</button>
             <button class="btn">Answer 3</button>
             <button class="btn">Answer 4</button>
-        <div class="answers"></div>
-            <button id="startbtn" class="startbtn-btn">Start</button>
+        </div>
+        <div class="controls">
+            <button id="startbtn" class="startbtn">Start</button>
+        </div>
+    </div>
+    <div class="highscore-timer">
+        <span id="highscore">High Score</span>
+        <span id="timer">Timer</span>
     </div>
     <footer>
 
