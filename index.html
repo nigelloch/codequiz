@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./assets/js/script.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Riddle Me This!</title>
 
@@ -15,17 +14,20 @@
         </h2>
     </header>
     <div class="container">
-        <div class="question-container">
-            Question
+        <div id="quiz-instructions">
+            Welcome to this whack-ass game I made. I'm new at this so don't judge too harshly. Anyways, answer the questions. Or don't. Do what you want.
         </div>
-        <div id="answer-container" class="btn-grid">
+        <div id="question" class="question-container hide">
+            What the fuck?
+        </div>
+        <div id="answer-container" class="btn-grid hide">
             <button class="btn">Answer 1</button>
             <button class="btn">Answer 2</button>
             <button class="btn">Answer 3</button>
             <button class="btn">Answer 4</button>
         </div>
         <div class="controls">
-            <button id="startbtn" class="startbtn">Start</button>
+            <button id="startbtn" class="start-btn">Start</button>
         </div>
     </div>
     <div class="highscore-timer">
@@ -36,4 +38,5 @@
 
     </footer>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>
