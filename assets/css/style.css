@@ -62,6 +62,16 @@ body {
     
 }
 
+.next-btn {
+    
+    justify-content: center;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    
+}
+
 .highscore-timer {
     justify-content: space-between;
     display: grid;
@@ -80,6 +90,9 @@ body {
     display: none;
 }
 
+.instruction-header {
+    justify-content: center;
+}
 .quiz-intructions {
     padding: 10px;
     max-width: 20px;

@@ -6,7 +6,11 @@ const quizInstructions = document.getElementById('quiz-instructions')
 
 const question = document.getElementById('question')
 
+const nextButton = document.getElementById('nextbtn')
+
 startButton.addEventListener('click', startGame)
+
+nextButton.addEventListener('click', setNextQuestion)
 
 // start timer, hide start button, show question, show current score, reset timer
 function startGame() {
@@ -21,6 +25,9 @@ function startGame() {
 
     console.log(startButton.classList)
     startButton.classList.toggle('hide');
+
+    console.log(nextButton.classList)
+    nextButton.classList.toggle('hide');
 
 }
 
