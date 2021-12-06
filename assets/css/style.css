@@ -29,8 +29,12 @@ body {
     height: 50%;
 }
 
+.questionstyle {
+    border: black solid;
+}
+
 .container {
-    background-color: aqua;
+
     border-radius: 15px;
     border: navy solid;
     padding: 15px;
