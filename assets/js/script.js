@@ -4,6 +4,8 @@ var quizInstructions = document.getElementById('quiz-instructions')
 var questionIdElement = document.getElementById('questionId')
 var nextButton = document.getElementById('nextbtn')
 var questionText = document.getElementById('questionId')
+
+
 // answer buttons
 var opt1 = document.getElementById('opt1')
 var opt2 = document.getElementById('opt2')
@@ -11,7 +13,10 @@ var opt3 = document.getElementById('opt3')
 var opt4 = document.getElementById('opt4')
 
 var currentQuestion;
-var timeRemaining;
+var timeRemaining = document.getElementById('timer')
+var penalty = 10;
+
+
 
 startButton.addEventListener('click', startGame)
 //nextButton.addEventListener('click', setNextQuestion)
@@ -22,7 +27,7 @@ function startGame() {
     quizInstructions.classList.toggle('hide');
     startButton.classList.toggle('hide');
     questionContainer.classList.remove('hide');
-    currentQuestion= 0;
+    currentQuestion = 0;
     nextQuestions()
     timeRemaining = 60;
     timer()
@@ -31,7 +36,7 @@ function startGame() {
 
 // load next question and answers
 function nextQuestions() {
-    // questionsList.classList.toggle('hide')
+
     questionText.textContent = questionsList[currentQuestion].title;
     opt1.textContent = questionsList[currentQuestion].answers[0].text;
     opt2.textContent = questionsList[currentQuestion].answers[1].text;
@@ -52,6 +57,7 @@ function checkAnswerandIterate (event) {
     }
 }
 
+
 function timer () {
     var interval= setInterval(function(){
         //decrease time every second
@@ -61,8 +67,14 @@ function timer () {
             clearInterval(interval)
         }
     }, 1000)
+    
 }
+
 // game complete all questions answered - total points - save to localStorage for high score - play again option
+
+
+
+
 opt1.addEventListener("click", checkAnswerandIterate);
 opt2.addEventListener("click", checkAnswerandIterate);
 opt3.addEventListener("click", checkAnswerandIterate);

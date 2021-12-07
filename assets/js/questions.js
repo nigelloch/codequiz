@@ -7,7 +7,7 @@ var questionsList = [
         { text: '34', correct: false },
         { text: '32', correct: false }
       ],
-      crcAnswer: '4'
+      crctAnswer: '4'
     },
     {
       title: 'What is 3 + 3?',
@@ -17,7 +17,7 @@ var questionsList = [
         { text: '332', correct: false },
         { text: '54', correct: false }
       ],
-      crcAnswer: '6'
+      crctAnswer: '6'
     },
     {
       title: 'What is 4 + 4?',
@@ -27,7 +27,7 @@ var questionsList = [
         { text: '4', correct: false },
         { text: '6', correct: false }
       ],
-      crcAnswer: '8'
+      crctAnswer: '8'
     },
     
   ]
