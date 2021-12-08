@@ -75,7 +75,6 @@ function timer () {
 
 
 
-
 opt1.addEventListener("click", checkAnswerandIterate);
 opt2.addEventListener("click", checkAnswerandIterate);
 opt3.addEventListener("click", checkAnswerandIterate);
