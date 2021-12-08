@@ -13,7 +13,8 @@ var opt3 = document.getElementById('opt3')
 var opt4 = document.getElementById('opt4')
 
 var currentQuestion;
-var timeRemaining = document.getElementById('timer')
+var timeRemainingSpan = document.getElementById('timer')
+var timeRemaining;
 var penalty = 10;
 
 
@@ -62,7 +63,7 @@ function timer () {
     var interval= setInterval(function(){
         //decrease time every second
         timeRemaining--;
-        console.log(timeRemaining)
+        timeRemainingSpan.textContent = timeRemaining
         if(timeRemaining <= 0) {
             clearInterval(interval)
         }
