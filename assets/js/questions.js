@@ -1,33 +1,43 @@
 var questionsList = [
     {
-      title: 'What is 2 + 2?',
+      title: 'What does SQL stand for?',
       answers: [
-        { text: '4', correct: true },
-        { text: '22', correct: false },
-        { text: '34', correct: false },
-        { text: '32', correct: false }
+        { text: 'Standard Querying Logic', correct: false },
+        { text: 'Sequential Quantum Language', correct: false },
+        { text: 'Structured Query Language', correct: true },
+        { text: 'Syntax Query Logic', correct: false }
       ],
-      crctAnswer: '4'
+      crctAnswer: 'Structured Query Language'
     },
     {
-      title: 'What is 3 + 3?',
+      title: 'Inside which HTML element do we put the JavaScript?',
       answers: [
-        { text: '6', correct: true },
-        { text: '24', correct: false },
-        { text: '332', correct: false },
-        { text: '54', correct: false }
+        { text: '<js>', correct: false },
+        { text: '<script>', correct: true },
+        { text: '<javascript>', correct: false },
+        { text: '<scripting>', correct: false }
       ],
-      crctAnswer: '6'
+      crctAnswer: '<script>'
     },
     {
-      title: 'What is 4 + 4?',
+      title: 'What does CSS stand for?',
       answers: [
-        { text: '8', correct: true },
-        { text: '2', correct: false },
-        { text: '4', correct: false },
-        { text: '6', correct: false }
+        { text: 'Computer Style Sheets', correct: false },
+        { text: 'Cascading Style Sheets', correct: true },
+        { text: 'Colorful Style Sheets', correct: false },
+        { text: 'Creative Style Sheets', correct: false }
       ],
-      crctAnswer: '8'
+      crctAnswer: 'Cascading Style Sheets'
+    },
+    {
+      title: 'Which is the correct CSS syntax?',
+      answers: [
+        { text: 'body:color=black;', correct: false },
+        { text: '{body:color=black;}', correct: false },
+        { text: 'body {color: black;}', correct: true },
+        { text: '{body;color:black;', correct: false }
+      ],
+      crctAnswer: 'body {color: black;'
     },
     
   ]
